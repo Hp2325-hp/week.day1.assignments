@@ -1,0 +1,27 @@
+package week3.day1.assignments.org.system;
+
+public class Computer {
+	
+	public void computerModel(){
+		System.out.println("This is computer Model");
+	}
+	
+
+}
+--------------------------------------------------------
+package week3.day1.assignments.org.system;
+
+public class Desktop extends Computer{
+
+	public void desktopSize() {
+		System.out.println("This is Desktop size class");
+	}
+	
+	public static void main(String[] args) {
+		Desktop d=new Desktop();
+		
+		d.computerModel();
+		d.desktopSize();
+	}
+	
+}
