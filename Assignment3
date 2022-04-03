@@ -1,0 +1,42 @@
+package week3.day1.assignments.org.system;
+
+public class BankInfo {
+
+	public void saving()
+	{
+		System.out.println("This is Saving method");
+	}
+	
+	public void fixed()
+	{
+		System.out.println("This is  Fixed method");
+	}
+	
+	public void deposit()
+	{
+		System.out.println("This is Deposited method");
+	}
+}
+
+--------------------------------------------------------------
+
+package week3.day1.assignments.org.system;
+
+public class AxisBank extends BankInfo{
+
+	//overriding
+	public void deposit()
+	{
+		System.out.println("This is updated deposite method");
+	}
+	
+	public static void main(String[] args) {
+		
+		BankInfo bi=new AxisBank();
+		bi.deposit();
+		bi.fixed();
+		bi.saving();
+
+	}
+
+}
