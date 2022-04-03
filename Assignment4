@@ -1,0 +1,36 @@
+package week3.day1.assignments.org.system;
+
+public class Students {
+
+
+	public void getStudentInfo()
+	{
+		
+		System.out.println("This is get student info 1st method");
+	}
+	
+	public void getStudentInfo(int id)
+	{
+		
+		System.out.println("This is get student info 2nd method id="+id);
+	}
+	
+	public void getStudentInfo(int id,String name)
+	{
+		System.out.println("This is get student info 3rd method "+id+" name = "+name);
+	}
+	public void getStudentInfo(String email,String phone_no)
+	{
+		System.out.println("This is get student info 4th method mail="+email+" phone ="+phone_no);
+	}
+	public static void main(String[] args) {
+		
+		Students s=new Students();
+		s.getStudentInfo();
+		s.getStudentInfo(123);
+		s.getStudentInfo(123,"Hari");
+		s.getStudentInfo("hari@gamil.com","8080808080");
+
+	}
+
+}
